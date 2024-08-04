@@ -17,6 +17,8 @@ public class Topic_04_Xpath {
 
     @BeforeClass
     public void beforeClass() {
+
+    // Sslenium 2.x/3.x/4.x (4.6 trở xuống)
         if (osName.contains("Windows")) {
             System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
         } else {
@@ -26,7 +28,7 @@ public class Topic_04_Xpath {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("https://www.facebook.com/");
+        //driver.get("https://www.facebook.com/");
 
         driver.manage().window().maximize();
     }
